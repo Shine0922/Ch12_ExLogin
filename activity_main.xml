@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win7.exlogin.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtID"
+            android:text="  輸入帳號 : "
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtID"/>
+
+        <TextView
+            android:id="@+id/txtPW"
+            android:text="  輸入密碼 : "
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtID"/>
+
+        <EditText
+            android:id="@+id/edtPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@+id/txtPW"/>
+
+        <Button
+            android:id="@+id/btnOK"
+            android:text="確認登入 "
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPW"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:text="重新輸入 "
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPW"
+            android:layout_toRightOf="@+id/btnOK"/>
+
+        <Button
+            android:id="@+id/btnEnd"
+            android:text="   結束   "
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPW"
+            android:layout_toRightOf="@+id/btnReset"/>
+
+        <EditText
+            android:id="@+id/edtShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnOK"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
